@@ -71,3 +71,20 @@ or write, fix, or review tests — use the skill in
 [.claude/skills/test-automation/](.claude/skills/test-automation/SKILL.md); it is the
 reference for tooling, structure, isolation, test levels, and coverage targets. Claude
 loads it automatically when a task involves tests.
+
+## Coding Standards
+
+> **MANDATORY:** Whenever ANY application code is created or changed in this project, the
+> **`code-standards` skill** MUST be loaded — without exception. This applies to every
+> code change: new files, new functions, new endpoints, new components, bug fixes,
+> refactors, or any other modification to application code under `src/` or `frontend/`.
+> Before writing or editing code, load
+> [.claude/skills/code-standards/](.claude/skills/code-standards/SKILL.md) and follow it.
+> If you are about to touch code and have not loaded the skill, STOP and load it first.
+
+This project ships a **`code-standards` skill** that defines how code is written and
+structured. Whenever you write, refactor, or review application code — or the user asks
+to clean up, simplify, or review code for style — use the skill in
+[.claude/skills/code-standards/](.claude/skills/code-standards/SKILL.md); it is the
+reference for method length, parameters, variable scope, error handling, comments, magic
+numbers, nesting, and ternaries. Claude loads it automatically when a task touches code.
